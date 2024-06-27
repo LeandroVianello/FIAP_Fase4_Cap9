@@ -1,0 +1,74 @@
+:root {
+    --background-color: black;
+    --background-pattern: url('https://www.transparenttextures.com/patterns/stardust.png');
+    --container-bg-color: rgba(0, 0, 0, 0.8);
+    --container-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    --text-color: white;
+    --font-family: Arial, sans-serif;
+    --input-border-color: #ccc;
+    --input-border-radius: 5px;
+    --input-padding: 10px;
+    --button-bg-color: #4CAF50;
+    --button-hover-bg-color: #45a049;
+    --button-border-radius: 5px;
+    --container-padding: 20px;
+    --container-border-radius: 10px;
+    --container-width: 100%;
+    --container-max-width: 400px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    background-image: var(--background-pattern);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+.login-container {
+    background-color: var(--container-bg-color);
+    padding: var(--container-padding);
+    border-radius: var(--container-border-radius);
+    box-shadow: var(--container-shadow);
+    text-align: center;
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: var(--input-padding);
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+}
+
+.login-container button {
+    width: 100%;
+    padding: var(--input-padding);
+    background-color: var(--button-bg-color);
+    border: none;
+    color: var(--text-color);
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: var(--button-hover-bg-color);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png'), url('path-to-your-moon-image.png');
+            background-repeat: repeat, no-repeat;
+            background-position: center, top right;
+            background-size: auto, 100px 100px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            text-align: center; /* Centraliza o texto dentro do container */
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left; /* Alinha os rótulos à esquerda */
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="processa_login.php" method="post">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
